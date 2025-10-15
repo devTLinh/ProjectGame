@@ -8,6 +8,11 @@ public class Player : Entity
     [SerializeField] private float jumpForce = 8f;
     private float xInput;
     bool canJump = true;
+    private void Awake()
+    {
+        base.Start();
+        attackDamage = 35;
+    }
     protected override void Update()
     {
         base.Update();

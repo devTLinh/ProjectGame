@@ -17,7 +17,7 @@ public class Entity : MonoBehaviour
 
     [Header("Attack details")]
     private bool canAttack = true;
-    [SerializeField] protected int attackDamage = 20;
+    [SerializeField] public int attackDamage = 0;
     [SerializeField] protected float attackRadius;
     [SerializeField] protected Transform attackPoint;
     [SerializeField] protected LayerMask whatIsTarget;
@@ -40,7 +40,7 @@ public class Entity : MonoBehaviour
         HandleAnimation();
         HandleFlip();
     }
-    public void DamageTargets()
+    public void DamageTargets(int attackDamage)
     {
         Collider2D[] enemyColliders = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, whatIsTarget);
         foreach (Collider2D item in enemyColliders)
@@ -108,7 +108,7 @@ public class Entity : MonoBehaviour
     {
         anim.SetTrigger("attack");
     }
-    protected void Flip()
+    public void Flip()
     {
         transform.Rotate(0, 180, 0);
         facingRight = !facingRight;

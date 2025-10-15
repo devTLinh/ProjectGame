@@ -10,6 +10,7 @@ public class Enemy : Entity
     private void Awake()
     {
         base.Start();
+        attackDamage = 5;
     }
     protected override void Update()
     {

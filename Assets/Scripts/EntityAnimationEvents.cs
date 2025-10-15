@@ -12,5 +12,5 @@ public class EntityAnimationEvents : MonoBehaviour
     private void EnableAttack() => entity.EnableAttack(true);
     private void DisableAttack() => entity.EnableAttack(false);
     private void DisableActivity() => entity.DestroyEntity();
-    private void DamageEnemies() => entity.DamageTargets();
+    private void DamageEnemies() => entity.DamageTargets(entity.attackDamage);
 }
