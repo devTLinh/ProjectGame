@@ -33,4 +33,8 @@ public class UI : MonoBehaviour
         killCount++;
         killCountText.text = killCount.ToString();
     }
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

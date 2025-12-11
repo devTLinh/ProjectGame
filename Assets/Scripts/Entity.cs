@@ -17,7 +17,7 @@ public class Entity : MonoBehaviour
 
     [Header("Attack details")]
     private bool canAttack = true;
-    [SerializeField] public int attackDamage = 0;
+    [SerializeField] public int attackDamage ;
     [SerializeField] protected float attackRadius;
     [SerializeField] protected Transform attackPoint;
     [SerializeField] protected LayerMask whatIsTarget;

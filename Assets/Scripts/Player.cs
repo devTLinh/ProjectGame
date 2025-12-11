@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Player : Entity
 {
     [Header("Movement details")]
@@ -17,6 +17,7 @@ public class Player : Entity
     {
         base.Update();
         HandleInput();
+        Console.WriteLine(rb.linearVelocityX);
     }
     protected override void HandleMovement()
     {
@@ -35,6 +36,14 @@ public class Player : Entity
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             HandleAttack();
+        }
+    }
+    protected override void HandleCollision()
+    {
+        base.HandleCollision();
+        if(Physics2D.Raycast(transform.position, Vector2.right * facingDir, 4f, LayerMask.GetMask("Win")))
+        {
+            SceneManager.LoadScene(0);
         }
     }
     private void TryToJump()

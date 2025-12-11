@@ -1,19 +1,32 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Baby : Entity
 {
     [SerializeField] private Transform player;
     private SpriteRenderer sr;
-    private float moveSpeed = 4f;
-    private float distanceToPlayer = 4f;
+    private float moveSpeed = 8f;
+    private float distanceToPlayer = 3f;
     [SerializeField]private Material damageMaterial;
     private Coroutine DamageFeedback;
     private float damageFlashDuration = .5f;
+    [SerializeField] private float wallCheckDistance;
+    protected bool isTouchingWall;
+    [SerializeField] private float jumpForce;
     private void Awake()
     {
         base.Start();
         sr = GetComponentInChildren<SpriteRenderer>();
+    }
+    protected override void Update()
+    {
+        base.Update();
+        if(Physics2D.Raycast(transform.position, Vector2.right * facingDir, wallCheckDistance, LayerMask.GetMask("NextLevel")))
+        {
+            int index = SceneManager.GetActiveScene().buildIndex + 1;
+            SceneManager.LoadScene(index);
+        }
     }
     protected override void HandleMovement()
     {
@@ -25,6 +38,15 @@ public class Baby : Entity
         {
             rb.linearVelocity = new Vector2(0, rb.linearVelocityY);
         }
+        if (isTouchingWall && isGrounded)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        }
+    }
+    protected override void HandleCollision()
+    {
+        base.HandleCollision();
+        isTouchingWall = Physics2D.Raycast(transform.position, Vector2.right * facingDir, wallCheckDistance, LayerMask.GetMask("Ground"));
     }
     protected override void HandleFlip()
     {
