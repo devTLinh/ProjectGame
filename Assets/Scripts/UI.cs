@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class UI : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverUI;
+    [SerializeField] private GameObject pauseMenuUI;
     public static UI instance;
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] private TextMeshProUGUI killCountText;
@@ -22,6 +23,16 @@ public class UI : MonoBehaviour
     {
         Time.timeScale = 0f;
         gameOverUI.SetActive(true);
+    }
+    public void EnablePauseGameUI()
+    {
+        Time.timeScale = 0f;
+        pauseMenuUI.SetActive(true);
+    }
+    public void DisablePauseGameUI()
+    {
+        Time.timeScale = 1f;
+        pauseMenuUI.SetActive(false);
     }
     public void RestartLevel()
     {
