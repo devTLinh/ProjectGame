@@ -26,11 +26,13 @@ public class UI : MonoBehaviour
     }
     public void EnablePauseGameUI()
     {
+        AudioManager.instance.PlaySFX(AudioManager.instance.buttonMusic);
         Time.timeScale = 0f;
         pauseMenuUI.SetActive(true);
     }
     public void DisablePauseGameUI()
     {
+        AudioManager.instance.PlaySFX(AudioManager.instance.buttonMusic);
         Time.timeScale = 1f;
         pauseMenuUI.SetActive(false);
     }

@@ -206,7 +206,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -22.4387, y: 333.6581}
-  m_SizeDelta: {x: 80, y: 70}
+  m_SizeDelta: {x: 48, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6680421436033506086
 CanvasRenderer:
@@ -1398,7 +1398,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -23, y: 334}
-  m_SizeDelta: {x: 75, y: 65}
+  m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3957826669122460483
 CanvasRenderer:
@@ -1967,7 +1967,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CONTIMUE
+  m_text: CONTINUE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1a843f587c1fce24da9c65ea3a9165c2, type: 2}
   m_sharedMaterial: {fileID: 9197652442908381076, guid: 1a843f587c1fce24da9c65ea3a9165c2, type: 2}
@@ -2513,7 +2513,7 @@ GameObject:
   - component: {fileID: 3975869075725101387}
   - component: {fileID: 6672719983871971370}
   m_Layer: 5
-  m_Name: GameOver_Text
+  m_Name: Pause_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -315,12 +315,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1136653538}
     - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
       propertyPath: attackDamage
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
       propertyPath: currentHealth
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
+      propertyPath: distanceToBaby
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6702245018000197197, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14844,7 +14852,7 @@ Transform:
   m_GameObject: {fileID: 468949576}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.0199642, y: -1.632147, z: -10}
+  m_LocalPosition: {x: -1.2000456, y: -1.6321067, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15151,12 +15159,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1136653538}
     - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
       propertyPath: attackDamage
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
       propertyPath: currentHealth
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
+      propertyPath: distanceToBaby
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6702245018000197197, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15385,12 +15401,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1136653538}
     - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
       propertyPath: attackDamage
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
       propertyPath: currentHealth
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
+      propertyPath: distanceToBaby
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6702245018000197197, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15456,6 +15480,10 @@ PrefabInstance:
     - target: {fileID: 1859310644907215493, guid: 67b9021681d9cb546a2ee382ce5708a0, type: 3}
       propertyPath: currentHealth
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1859310644907215493, guid: 67b9021681d9cb546a2ee382ce5708a0, type: 3}
+      propertyPath: distanceToBaby
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1859310644907215493, guid: 67b9021681d9cb546a2ee382ce5708a0, type: 3}
       propertyPath: groundCheckDistance
@@ -16019,12 +16047,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1136653538}
     - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
       propertyPath: attackDamage
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
       propertyPath: currentHealth
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
+      propertyPath: distanceToBaby
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6702245018000197197, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21257,12 +21293,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1136653538}
     - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
       propertyPath: attackDamage
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
       propertyPath: currentHealth
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
+      propertyPath: distanceToBaby
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6702245018000197197, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21494,12 +21538,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1136653538}
     - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
       propertyPath: attackDamage
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
       propertyPath: currentHealth
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
+      propertyPath: distanceToBaby
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6702245018000197197, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21911,12 +21963,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1136653538}
     - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
       propertyPath: attackDamage
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
       propertyPath: currentHealth
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
+      propertyPath: distanceToBaby
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6702245018000197197, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22281,12 +22341,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1136653538}
     - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
       propertyPath: attackDamage
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
       propertyPath: currentHealth
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572871022938980173, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
+      propertyPath: distanceToBaby
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6702245018000197197, guid: 2d800198aae696c4da8b20c0729c2801, type: 3}
       propertyPath: m_LocalPosition.x

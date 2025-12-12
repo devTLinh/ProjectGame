@@ -9,6 +9,7 @@ public class Baby : Entity
     private float moveSpeed = 8f;
     private float distanceToPlayer = 3f;
     [SerializeField]private Material damageMaterial;
+    private Material original;
     private Coroutine DamageFeedback;
     private float damageFlashDuration = .5f;
     [SerializeField] private float wallCheckDistance;
@@ -18,6 +19,7 @@ public class Baby : Entity
     {
         base.Start();
         sr = GetComponentInChildren<SpriteRenderer>();
+        original = sr.material;
     }
     protected override void Update()
     {
@@ -61,7 +63,6 @@ public class Baby : Entity
     }
     private IEnumerator damageFeedback()
     {
-        Material original = sr.material;
         sr.material = damageMaterial;
         yield return new WaitForSeconds(damageFlashDuration);
         sr.material = original;

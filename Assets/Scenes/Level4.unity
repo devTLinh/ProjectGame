@@ -14887,8 +14887,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 629391788}
     - target: {fileID: 8234146418935271660, guid: 3f621eff24cb5e8469d067df793a1861, type: 3}
+      propertyPath: moveSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234146418935271660, guid: 3f621eff24cb5e8469d067df793a1861, type: 3}
       propertyPath: attackDamage
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234146418935271660, guid: 3f621eff24cb5e8469d067df793a1861, type: 3}
+      propertyPath: distanceToBaby
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15044,8 +15052,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 629391788}
     - target: {fileID: 8234146418935271660, guid: 3f621eff24cb5e8469d067df793a1861, type: 3}
+      propertyPath: moveSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234146418935271660, guid: 3f621eff24cb5e8469d067df793a1861, type: 3}
       propertyPath: attackDamage
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234146418935271660, guid: 3f621eff24cb5e8469d067df793a1861, type: 3}
+      propertyPath: distanceToBaby
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15068,6 +15084,7 @@ GameObject:
   - component: {fileID: 558129456}
   - component: {fileID: 558129455}
   - component: {fileID: 558129457}
+  - component: {fileID: 558129458}
   m_Layer: 11
   m_Name: MUSHROOM 1-2
   m_TagString: Untagged
@@ -15172,6 +15189,104 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &558129458
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558129454}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.71875, y: 0.53125}
+    newSize: {x: 0.71875, y: 0.53125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.26107624, y: 0.40269038}
+      - {x: 0.2594588, y: 0.37858418}
+      - {x: 0.20783834, y: 0.37573206}
+      - {x: 0.20880473, y: 0.40733206}
+      - {x: 0.11199788, y: 0.40809184}
+      - {x: 0.11198772, y: 0.5324079}
+      - {x: -0.016720166, y: 0.53321725}
+      - {x: -0.020941764, y: 0.5036875}
+      - {x: -0.08307554, y: 0.502339}
+      - {x: -0.08246361, y: 0.47311372}
+      - {x: -0.16718706, y: 0.47335654}
+      - {x: -0.27006182, y: 0.4682472}
+      - {x: -0.2741003, y: 0.44305494}
+      - {x: -0.3019934, y: 0.43989876}
+      - {x: -0.2987738, y: 0.41115788}
+      - {x: -0.3607499, y: 0.40830687}
+      - {x: -0.36284545, y: 0.31359816}
+      - {x: -0.26608944, y: 0.3141635}
+      - {x: -0.2616695, y: 0.34051067}
+      - {x: -0.2364925, y: 0.3384876}
+      - {x: -0.23557697, y: 0.3116024}
+      - {x: -0.20574096, y: 0.30944663}
+      - {x: -0.20862488, y: 0.2843742}
+      - {x: -0.2690039, y: 0.28149143}
+      - {x: -0.26643023, y: 0.25339666}
+      - {x: -0.2984991, y: 0.24919762}
+      - {x: -0.2956152, y: 0.18312295}
+      - {x: -0.26446185, y: 0.18139091}
+      - {x: -0.26677608, y: 0.1578884}
+      - {x: -0.20821287, y: 0.14884137}
+      - {x: -0.20716003, y: 0.122034684}
+      - {x: -0.17657632, y: 0.123835705}
+      - {x: -0.17827004, y: 0.09775558}
+      - {x: -0.21022704, y: 0.09630663}
+      - {x: -0.2044338, y: 0.0693175}
+      - {x: -0.23882708, y: 0.06815162}
+      - {x: -0.24144998, y: 0.03125}
+      - {x: -0.20703796, y: 0.025154427}
+      - {x: -0.21039836, y: -0.0058962503}
+      - {x: 0.27486676, y: -0.003930727}
+      - {x: 0.26477396, y: 0.09204514}
+      - {x: 0.23559406, y: 0.09591499}
+      - {x: 0.2341801, y: 0.12659167}
+      - {x: 0.20876403, y: 0.12655368}
+      - {x: 0.20733988, y: 0.21868306}
+      - {x: 0.33293498, y: 0.21551067}
+      - {x: 0.33008668, y: 0.25194818}
+      - {x: 0.3645512, y: 0.24948913}
+      - {x: 0.36670774, y: 0.37701333}
+      - {x: 0.33019346, y: 0.37405154}
+      - {x: 0.3257141, y: 0.405798}
+  m_UseDelaunayMesh: 0
 --- !u!1001 &582421601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15229,8 +15344,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 629391788}
     - target: {fileID: 8234146418935271660, guid: 3f621eff24cb5e8469d067df793a1861, type: 3}
+      propertyPath: moveSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234146418935271660, guid: 3f621eff24cb5e8469d067df793a1861, type: 3}
       propertyPath: attackDamage
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234146418935271660, guid: 3f621eff24cb5e8469d067df793a1861, type: 3}
+      propertyPath: distanceToBaby
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15250,34 +15373,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1989094062645656581, guid: fd98f9b0f06bd6d458b60e5b314cf709, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: ef5c40981c82f1d488eeb77b2ca6f06e, type: 2}
     - target: {fileID: 3316582582388193944, guid: fd98f9b0f06bd6d458b60e5b314cf709, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1371324008}
-    - target: {fileID: 3316582582388193944, guid: fd98f9b0f06bd6d458b60e5b314cf709, type: 3}
-      propertyPath: jumpForce
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3316582582388193944, guid: fd98f9b0f06bd6d458b60e5b314cf709, type: 3}
-      propertyPath: attackDamage
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3316582582388193944, guid: fd98f9b0f06bd6d458b60e5b314cf709, type: 3}
-      propertyPath: currentHealth
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 3316582582388193944, guid: fd98f9b0f06bd6d458b60e5b314cf709, type: 3}
-      propertyPath: wallCheckDistance
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3316582582388193944, guid: fd98f9b0f06bd6d458b60e5b314cf709, type: 3}
-      propertyPath: groundCheckDistance
-      value: 1.04
-      objectReference: {fileID: 0}
     - target: {fileID: 4291926652125293868, guid: fd98f9b0f06bd6d458b60e5b314cf709, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.56
@@ -15738,6 +15837,14 @@ PrefabInstance:
       propertyPath: baby
       value: 
       objectReference: {fileID: 629391788}
+    - target: {fileID: 1859310644907215493, guid: 67b9021681d9cb546a2ee382ce5708a0, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1859310644907215493, guid: 67b9021681d9cb546a2ee382ce5708a0, type: 3}
+      propertyPath: distanceToBaby
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2175413652390491079, guid: 67b9021681d9cb546a2ee382ce5708a0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -146.85104
@@ -16372,6 +16479,14 @@ PrefabInstance:
       propertyPath: baby
       value: 
       objectReference: {fileID: 629391788}
+    - target: {fileID: 1859310644907215493, guid: 67b9021681d9cb546a2ee382ce5708a0, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1859310644907215493, guid: 67b9021681d9cb546a2ee382ce5708a0, type: 3}
+      propertyPath: distanceToBaby
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2175413652390491079, guid: 67b9021681d9cb546a2ee382ce5708a0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -167.4594
@@ -16415,10 +16530,6 @@ PrefabInstance:
     - target: {fileID: 8025205728169067013, guid: 67b9021681d9cb546a2ee382ce5708a0, type: 3}
       propertyPath: m_Name
       value: Mushroom
-      objectReference: {fileID: 0}
-    - target: {fileID: 8025205728169067013, guid: 67b9021681d9cb546a2ee382ce5708a0, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16790,6 +16901,14 @@ PrefabInstance:
       propertyPath: baby
       value: 
       objectReference: {fileID: 629391788}
+    - target: {fileID: 1859310644907215493, guid: 67b9021681d9cb546a2ee382ce5708a0, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1859310644907215493, guid: 67b9021681d9cb546a2ee382ce5708a0, type: 3}
+      propertyPath: distanceToBaby
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2175413652390491079, guid: 67b9021681d9cb546a2ee382ce5708a0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -100.947556
@@ -16941,7 +17060,7 @@ Transform:
   m_GameObject: {fileID: 1449780875}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.558037, y: -2.9559174, z: -10}
+  m_LocalPosition: {x: -8.738121, y: -2.9559174, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17219,6 +17338,14 @@ PrefabInstance:
       propertyPath: baby
       value: 
       objectReference: {fileID: 629391788}
+    - target: {fileID: 1859310644907215493, guid: 67b9021681d9cb546a2ee382ce5708a0, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1859310644907215493, guid: 67b9021681d9cb546a2ee382ce5708a0, type: 3}
+      propertyPath: distanceToBaby
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2175413652390491079, guid: 67b9021681d9cb546a2ee382ce5708a0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -120.957634
@@ -17449,6 +17576,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4403492386504082096, guid: 3f621eff24cb5e8469d067df793a1861, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.68
+      objectReference: {fileID: 0}
     - target: {fileID: 8064840832971084913, guid: 3f621eff24cb5e8469d067df793a1861, type: 3}
       propertyPath: m_Name
       value: Skeleton (3)
@@ -17458,8 +17589,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 629391788}
     - target: {fileID: 8234146418935271660, guid: 3f621eff24cb5e8469d067df793a1861, type: 3}
+      propertyPath: maxHealth
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234146418935271660, guid: 3f621eff24cb5e8469d067df793a1861, type: 3}
+      propertyPath: moveSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234146418935271660, guid: 3f621eff24cb5e8469d067df793a1861, type: 3}
       propertyPath: attackDamage
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234146418935271660, guid: 3f621eff24cb5e8469d067df793a1861, type: 3}
+      propertyPath: attackRadius
+      value: 3.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234146418935271660, guid: 3f621eff24cb5e8469d067df793a1861, type: 3}
+      propertyPath: currentHealth
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234146418935271660, guid: 3f621eff24cb5e8469d067df793a1861, type: 3}
+      propertyPath: distanceToBaby
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8234146418935271660, guid: 3f621eff24cb5e8469d067df793a1861, type: 3}
       propertyPath: groundCheckDistance

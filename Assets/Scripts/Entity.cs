@@ -40,7 +40,7 @@ public class Entity : MonoBehaviour
         HandleAnimation();
         HandleFlip();
     }
-    public void DamageTargets(int attackDamage)
+    public virtual void DamageTargets(int attackDamage)
     {
         Collider2D[] enemyColliders = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, whatIsTarget);
         foreach (Collider2D item in enemyColliders)

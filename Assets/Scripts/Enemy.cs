@@ -7,10 +7,11 @@ public class Enemy : Entity
 {
     [Header("Follow Baby")]
     [SerializeField] private Transform baby;
-    [SerializeField] private float distanceToBaby = 3f;
+    [SerializeField] private float distanceToBaby = 2f;
     private bool playerDetected;
     [Header("Movement details")]
     [SerializeField] protected float moveSpeed = 8f;
+
     private void Awake()
     {
         attackPoint = transform.Find("AttackPoint");
@@ -23,7 +24,6 @@ public class Enemy : Entity
     }
     protected override void HandleMovement()
     {
-        
         if (canMove && Math.Abs(transform.position.x - baby.position.x) > distanceToBaby)
         {
             rb.linearVelocity = new Vector2(facingDir * moveSpeed, rb.linearVelocityY);
@@ -54,14 +54,11 @@ public class Enemy : Entity
     protected override void HandleCollision()
     {
         base.HandleCollision();
-        //if(attackPoint != null)
         playerDetected = Physics2D.OverlapCircle(attackPoint.position, attackRadius, whatIsTarget);
-        //Console.WriteLine("Player Detected: " + playerDetected);
-        //Console.WriteLine("Attack Point Position: " + attackPoint.position);
     }
     protected override void Die()
     {
         base.Die();
-        //UI.instance.AddKillCount();
+        UI.instance.AddKillCount();
     }
 }

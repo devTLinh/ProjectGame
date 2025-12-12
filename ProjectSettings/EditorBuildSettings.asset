@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level4.unity
     guid: 050b1aeaecd8bb54fa6ce0ea6edbf3f0
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: 243a29905948ff845b754240cc737a22
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

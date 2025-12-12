@@ -41,10 +41,15 @@ public class Player : Entity
     protected override void HandleCollision()
     {
         base.HandleCollision();
-        if(Physics2D.Raycast(transform.position, Vector2.right * facingDir, 4f, LayerMask.GetMask("Win")))
+        if(Physics2D.Raycast(transform.position, Vector2.right * facingDir, 2f, LayerMask.GetMask("Win")))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(5);
         }
+    }
+    public override void DamageTargets(int attackDamage)
+    {
+        AudioManager.instance.PlaySFX(AudioManager.instance.attackMusic);
+        base.DamageTargets(attackDamage);
     }
     private void TryToJump()
     {
